@@ -6,10 +6,19 @@ v = set()
 for s, p, o in g:
     v.add(str(s))
     v.add(str(o))
-print(v)
+# print(v)
 vList = list(v)
-print(vList)
-print(vList[1])
+
+# 去除url
+# content = re.sub(
+#            r'(?:(?:http|ftp)s?://)?' # http:// or https://
+#            r'(?:(?:[A-Z0-9](?:[A-Z0-9-]{0,61}[A-Z0-9])?\.)+(?:[A-Z]{2,6}\.?|[A-Z0-9-]{2,}\.?)|' #domain...
+#            r'localhost|' #localhost...
+#            r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})' # ...or ip
+#            r'(?::\d+)?' # optional port
+#            r'(?:\S*)', "", content, flags=re.MULTILINE | re.IGNORECASE)
+# print(vList)
+# print(vList[1])
 
 d = 2
 vivmap = {}
